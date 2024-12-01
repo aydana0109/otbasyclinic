@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AyClinic - Денсаулық орталығы. Денсаулық сақтау саласындағы ең үздік қызметтер мен заманауи технологияларды ұсынады.">
+<meta name="author" content="AyClinic">
+<meta name="keywords" content="Денсаулық, клиника, медициналық қызметтер, диагностика, стоматология">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>OtbasyClinic | Отбасылық денсаулық орталығы</title>
+     <style>
+    /* Негізгі стильдер */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    .container {
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    /* Таб батырмалары */
+    .tabs {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .tab-button {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background-color: #DCDCDC;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .tab-button:hover {
+      background-color:#fb923c;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* Пакет стильдері */
+    .package {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fff;
+      padding: 20px;
+      margin: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .package h3 {
+      margin-top: 0;
+    }
+
+    .package ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .package ul li {
+      margin: 5px 0;
+    }
+
+    .package p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .package button {
+      background-color:#12AC8E;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .package button:hover {
+      background-color: #fb923c;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      width: 90%;
+      max-width: 500px;
+      position: relative;
+    }
+
+    .modal-content .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .modal-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .modal-content table th,
+    .modal-content table td {
+      border: none;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .modal-content table td.old-price {
+      color: red;
+      text-decoration: line-through;
+    }
+
+    .modal-content table td.new-price {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+  </head>
+  <body>
+    <header>
+       <nav class="section__container nav__container">
+        <div class="nav__logo">Otbasy<span>Clinic</span></div>
+        <ul class="nav__links">
+          <li class="link"><a href="#home">Басты бет</a></li>
+          <li class="link"><a href="#about">Біз туралы</a></li>
+          <nav>
+            <ul class="menu">
+              <li class="dropdown">
+                <a href="#">Қызметтер</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="terapiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\11.png" alt="Терапия" />
+                      Терапия
+                    </a>
+                  </li>
+                  <li>
+                    <a href="pediatriya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\12.png" alt="Педиатрия" />
+                      Педиатрия
+                    </a>
+                  </li>
+                  <li>
+                    <a href="nevrologiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\14.png" alt="Неврология" />
+                      Нефрология
+                    </a>
+                  </li>
+                  <li>
+                    <a href="lor.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\15.png" alt="ЛОР" />
+                      ЛОР
+                    </a>
+                  </li>
+                  <li>
+                  <a href="nefrologiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\17.png" alt="Нефрология" />
+                      Неврология
+                    </a>
+                  </li>
+                  <li>
+                  <a href="endokrinologiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\13.png" alt="Эндокринология" />
+                      Эндокринология
+                    </a>
+                  </li>
+                  <li>
+                  <a href="reabilitat.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\18.png" alt="Реабилитация" />
+                      Реабилитация
+                    </a>
+                  </li>
+                   <li>
+                  <a href="hirurgiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\16.png" alt="Хирургия" />
+                      Хирургия
+                    </a>
+                  </li>
+                  <li>
+                  <a href="ginek.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\19.png" alt="Гинекология" />
+                      Гинекология
+                    </a>
+                  </li>
+                  <li>
+                  <a href="psicho.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\20.png" alt="Психотерапия" />
+                      Психотерапия
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <li class="link"><a href="#pages">Қызметкерлер</a></li>
+         <li class="link"><a href="checkup.html">Тексеру</a></li>
+           <li class="link"><a href="#reviews">Пікірлер</a></li>
+        </ul>
+       <a href="1.html" class="btn view-services-button">Жазылу</a>
+          <script src="script.js" defer></script>
+         <button class="menu-toggle">☰</button>
+      </nav>
+       <div class="container">
+   
+    <div class="tabs">
+      <button class="tab-button" onclick="showTab('woman')">Әйел</button>
+      <button class="tab-button" onclick="showTab('man')">Ер</button>
+      <button class="tab-button" onclick="showTab('child')">Балалар</button>
+    </div>
+
+    <section>
+    <div id="woman" class="tab-content active">
+      <div class="package">
+        <h3>BRONZE пакеті</h3>
+        <ul>
+          <li>Терапевтпен кеңесу</li>
+          <li>Кардиологпен кеңесу</li>
+          <li>Диетологпен кеңесу</li>
+          <li>Сүт бездерінің ультрадыбыстық зерттеуі</li>
+        </ul>
+        <p>113,000 ₸</p>
+        <button onclick="showDetails('bronze')">Қосымша мәліметтер</button>
+      </div>
+      <div class="package">
+        <h3>Silver пакеті</h3>
+        <ul>
+          <li>Маммологпен кеңесу</li>
+          <li>Кардиологпен кеңесу</li>
+          <li>Гинекологпен кеңесу</li>
+          <li>Микрофлораның скринингі</li>
+        </ul>
+        <p>165,000 ₸</p>
+        <button onclick="showDetails('silver')">Қосымша мәліметтер</button>
+      </div>
+      <div class="package">
+        <h3>Gold пакеті</h3>
+        <ul>
+          <li>Терапевтпен кеңесу</li>
+          <li>Маммологпен кеңесу</li>
+          <li>Кардиологпен кеңесу</li>
+          <li>Микрофлораның скринингі</li>
+        </ul>
+        <p>225,000 ₸</p>
+        <button onclick="showDetails('gold')">Қосымша мәліметтер</button>
+      </div>
+       <div class="package">
+        <h3>Silver 21+ пакет әйелдер</h3>
+        <ul>
+          <li>Терапевтпен кеңесу</li>
+          <li>Маммологпен кеңесу</li>
+          <li>Кардиологпен кеңесу</li>
+          <li>Гинекологтың кеңесі + онкоцитологияға жағынды</li>
+          <li>Микрофлораны скрининг (13+КВМ) 380</li>
+        </ul>
+        <p>165,000 ₸</p>
+        <button onclick="showDetails('gold')">Қосымша мәліметтер</button>
+      </div>
+       <div class="package">
+        <h3>Gold 21+ пакет әйелдер</h3>
+        <ul>
+          <li>Терапевтпен кеңесу</li>
+          <li>Маммологпен кеңесу</li>
+          <li>Кардиологпен кеңесу</li>
+          <li>Гинекологтың кеңесі + онкоцитологияға жағынды</li>
+          <li>Микрофлораны скрининг (13+КВМ) 380</li>
+        </ul>
+        <p>215,000 ₸</p>
+        <button onclick="showDetails('gold')">Қосымша мәліметтер</button>
+      </div>
+    </div>
+  </div>
+
+
+   <div id="man" class="tab-content ">
+      <div class="package">
+        <h3>BRONZE пакеті</h3>
+        <ul>
+          <li>Терапевтпен кеңесу</li>
+          <li>Кардиологпен кеңесу</li>
+          <li>ОГК рентгенографиясы 2 проекцияда</li>
+          <li>Қалқанша безінің ультрадыбыстық зерттеуі</li>
+        </ul>
+        <p>120,000 ₸</p>
+        <button onclick="showDetails('bronze')">Қосымша мәліметтер</button>
+
+      </div>
+      <div class="package">
+        <h3>Silver пакеті ерлер</h3>
+        <ul>
+          <li>Терапевтпен кеңесу</li>
+          <li>Кардиологпен кеңесу</li>
+          <li>Офтальмологпен кеңесу</li>
+          <li>Урологпен кеңесу</li>
+           <li>Диетологпен кеңесу</li>
+        </ul>
+        <p>190,000 ₸</p>
+        <button onclick="showDetails('silver')">Қосымша мәліметтер</button>
+      </div>
+
+      <div class="package">
+        <h3>Gold пакеті ерлер</h3>
+        <ul>
+           <li>Терапевтпен кеңесу</li>
+          <li>Кардиологпен кеңесу</li>
+          <li>Диетологпен кеңесу</li>
+          <li>ОГК рентгенографиясы 2 проекцияда</li>
+           <li>Қалқанша безінің ультрадыбыстық зерттеуі</li>
+        </ul>
+        <p>150,000 ₸</p>
+        <button onclick="showDetails('silver')">Қосымша мәліметтер</button>
+      </div>
+
+      <div class="package">
+        <h3>Standard пакеті ерлер</h3>
+        <ul>
+          <li>Терапевтпен кеңесу</li>
+          <li>Құрсақ қуысының және ретроперитонеальды кеңістіктің УДЗ</li>
+          <li>Рентген ОГК</li>
+          <li>ЭКГ</li>
+           <li>Глюкоза</li>
+        </ul>
+        <p>35,000 ₸</p>
+        <button onclick="showDetails('silver')">Қосымша мәліметтер</button>
+      </div>
+</div>
+</div>
+   <div id="child" class="tab-content ">
+      <div class="package">
+        <h3>Мектеп алдындағы "Basic" балалар пакеті</h3>
+        <ul>
+          <li>Педиатр/терапевт кеңесі</li>
+          <li>Офтальмолог кеңесі</li>
+          <li>ЛОР дәрігер кеңесі</li>
+          <li>Невропатолог кеңесі</li>
+          <li>Хирург/ортопед кеңесі</li>
+        </ul>
+        <p>65,000 ₸</p>
+        <button onclick="showDetails('bronze')">Қосымша мәліметтер</button>
+      </div>
+      </div>
+      </div>
+  <div id="details-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeDetails()">&times;</span>
+      <h3 id="modal-title">Қосымша мәліметтер</h3>
+      <table id="details-table"></table>
+    </div>
+  </div>
+  <script>
+    const details = {
+      bronze: [
+        { service: 'Терапевтпен кеңесу', oldPrice: '8,000 ₸', newPrice: '6,000 ₸' },
+        { service: 'Кардиологпен кеңесу', oldPrice: '10,000 ₸', newPrice: '7,500 ₸' },
+        { service: 'Диетологпен кеңесу', oldPrice: '12,000 ₸', newPrice: '9,000 ₸' },
+        { service: 'ОГК рентгенографиясы 2 проекцияда', oldPrice: '4,500 ₸', newPrice: '3,375 ₸' },
+        { service: 'Қалқанша безінің ультрадыбыстық зерттеуі', oldPrice: '5,000 ₸', newPrice: '3,750 ₸' },
+        { service: 'Сүт бездерінің ультрадыбыстық зерттеуі', oldPrice: '6,000 ₸', newPrice: '4,500 ₸' },
+        { service: 'Құрсақ қуысының және ретроперитонеальды кеңістіктің УДЗ', oldPrice: '8,000 ₸', newPrice: '6,000 ₸' },
+        { service: 'ЭКГ', oldPrice: '3,000 ₸', newPrice: '2,250 ₸' },
+        { service: 'ЭХОКГ', oldPrice: '10,000 ₸', newPrice: '7,500 ₸' },
+        { service: 'Жүгіру жолы сынағы (стресс сынағы)', oldPrice: '14,000 ₸', newPrice: '10,500 ₸' },
+        { service: 'Глюкоза', oldPrice: '950 ₸', newPrice: '712,5 ₸' },
+        { service: 'Гликолизденген гемоглобин', oldPrice: '3,300 ₸', newPrice: '2,475 ₸' },
+        { service: 'Инсулин', oldPrice: '3,300 ₸', newPrice: '2,475 ₸' },
+        { service: 'АСТ', oldPrice: '950 ₸', newPrice: '712,5 ₸' },
+        { service: 'ALT', oldPrice: '950 ₸', newPrice: '712,5 ₸' }
+      ],
+      silver: [
+        { service: 'Терапевтпен кеңесу', oldPrice: '8,000 ₸', newPrice: '6,000 ₸' },
+        { service: 'Маммологпен кеңесу', oldPrice: '10,000 ₸', newPrice: '7,500 ₸' },
+        { service: 'Кардиологпен кеңесу', oldPrice: '10,000 ₸', newPrice: '7,500 ₸' },
+        { service: 'Гинекологтың кеңесі + онкоцитологияға жағынды', oldPrice: '13,500 ₸', newPrice: '10,125 ₸' },
+        { service: 'Микрофлораны скрининг (13+КВМ) 380', oldPrice: '9,530 ₸', newPrice: '7147,5 ₸' },
+        { service: 'Офтальмологпен кеңесу', oldPrice: '15,000 ₸', newPrice: '11,250 ₸' },
+         { service: 'ОГК рентгенографиясы 2 проекцияда', oldPrice: '4,500 ₸', newPrice: '3,375 ₸' },
+        { service: 'Жамбас мүшелерінің ультрадыбыстық зерттеуі', oldPrice: '7,000 ₸', newPrice: '5,250 ₸' },
+        { service: 'Маммография (40 жастан жоғары)', oldPrice: '12,000 ₸', newPrice: '9,000 ₸' },
+        { service: 'Сүт бездерінің ультрадыбыстық зерттеуі', oldPrice: '6,000 ₸', newPrice: '4,500 ₸' },
+        { service: 'Құрсақ қуысының және ретроперитонеальды кеңістіктің УДЗ', oldPrice: '8,000 ₸', newPrice: '6,000 ₸' },
+        { service: 'ЭХОКГ', oldPrice: '10,000 ₸', newPrice: '7,500 ₸' }
+      ],
+      gold: [
+        { service: 'Терапевтпен кеңесу', oldPrice: '8,000 ₸', newPrice: '6,000 ₸' },
+        { service: 'Маммологпен кеңесу', oldPrice: '10,000 ₸', newPrice: '7,500 ₸' },
+        { service: 'Кардиологпен кеңесу', oldPrice: '10,000 ₸', newPrice: '7,500 ₸' },
+        { service: 'Гинекологтың кеңесі + онкоцитологияға жағынды', oldPrice: '13,500 ₸', newPrice: '9,000 ₸' },
+        { service: 'Микрофлораны скрининг (13+КВМ) 380', oldPrice: '9,530 ₸', newPrice: '7147,5 ₸' },
+        { service: 'Офтальмологпен кеңесу', oldPrice: '15,000 ₸', newPrice: '5250 ₸' },
+        { service: 'Диетологпен кеңесу', oldPrice: '12000 ₸', newPrice: '9,000₸' },
+        { service: 'КТ ОГК', oldPrice: '16,500 ₸', newPrice: '12,375 ₸' },
+        { service: 'Ультрадыбыстық доплерография BCA+MAG', oldPrice: '16,000 ₸', newPrice: '12,000 ₸' },
+        { service: 'Жамбас мүшелерінің ультрадыбыстық зерттеуі', oldPrice: '7000 ₸', newPrice: '5,250 ₸' }
+      ]
+    };
+
+ function showTab(tabId) {
+  const tabs = document.querySelectorAll('.tab-content');
+  tabs.forEach(tab => tab.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+}
+
+function showDetails(packageType) {
+  const modal = document.getElementById('details-modal');
+  const table = document.getElementById('details-table');
+  const data = details[packageType];
+
+  table.innerHTML = '';
+  data.forEach(item => {
+    const row = `
+      <tr>
+        <td>${item.service}</td>
+        <td class="old-price">${item.oldPrice}</td>
+        <td class="new-price">${item.newPrice}</td>
+      </tr>
+    `;
+    table.innerHTML += row;
+  });
+
+  modal.style.display = 'flex';
+}
+
+function closeDetails() {
+  const modal = document.getElementById('details-modal');
+  modal.style.display = 'none';
+}
+  </script>
+  </section>
+     <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Ay<span>Clinic</span></h3>
+          <p>
+            Біз сіздің денсаулық сақтау сапарыңыздың бір бөлігі болғанымызды мақтан тұтамыз және әр қадам сайын жанашырлықпен, жекелендірілген және жоғары деңгейдегі күтімді көрсетуге міндеттенеміз.
+          </p>
+          <p>
+            Денсаулығыңызбен бізге сеніңіз және сіз және сіздің жақындарыңыз үшін ең жақсы нәтижелерге қол жеткізу үшін бірге жұмыс істейік.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Біз туралы</h4>
+          <p>Басты бет</p>
+          <p>Біз туралы</p>
+          <p>Бізбен жұмыс</p>
+          <p>Біздің блог</p>
+          <p>Ережелер & Шарттар</p>
+        </div>
+        <div class="footer__col">
+          <h4>Қызметтер</h4>
+          <p>Іздеу шарттары</p>
+          <p>Аванстық іздеу</p>
+          <p>Құпиялылық саясаты</p>
+          <p>Жеткізушілер</p>
+          <p>Біздің дүкендер</p>
+        </div>
+        <div class="footer__col">
+          <h4>Байланыс</h4>
+          <p>
+            <i class="ri-map-pin-2-fill"></i>"Тәуелсіздік" даңғылы,18а
+          </p>
+          <p><i class="ri-mail-fill"></i> AyClinic18@gmail.com</p>
+          <p><i class="ri-phone-fill"></i> 8 (705) 582 24 57</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <p>&copy; 2024 Денсаулық орталығы. Барлық құқықтар қорғалған.</p>
+          <div class="footer__socials">
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

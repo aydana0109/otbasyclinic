@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AyClinic - Денсаулық орталығы. Денсаулық сақтау саласындағы ең үздік қызметтер мен заманауи технологияларды ұсынады.">
+<meta name="author" content="AyClinic">
+<meta name="keywords" content="Денсаулық, клиника, медициналық қызметтер, диагностика, стоматология">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>OtbasyClinic | Отбасылық денсаулық орталығы</title>
+    
+  </head>
+  <body>
+    <header>
+      <nav class="section__container nav__container">
+        <div class="nav__logo">Otbasy<span>Clinic</span></div>
+        <ul class="nav__links">
+          <li class="link"><a href="#home">Басты бет</a></li>
+          <li class="link"><a href="#about">Біз туралы</a></li>
+          <nav>
+            <ul class="menu">
+              <li class="dropdown">
+                <a href="#">Қызметтер</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="terapiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\11.png" alt="Терапия" />
+                      Терапия
+                    </a>
+                  </li>
+                  <li>
+                    <a href="pediatriya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\12.png" alt="Педиатрия" />
+                      Педиатрия
+                    </a>
+                  </li>
+                  <li>
+                    <a href="nevrologiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\14.png" alt="Неврология" />
+                      Нефрология
+                    </a>
+                  </li>
+                  <li>
+                    <a href="lor.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\15.png" alt="ЛОР" />
+                      ЛОР
+                    </a>
+                  </li>
+                  <li>
+                  <a href="nefrologiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\17.png" alt="Нефрология" />
+                      Неврология
+                    </a>
+                  </li>
+                  <li>
+                  <a href="endokrinologiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\13.png" alt="Эндокринология" />
+                      Эндокринология
+                    </a>
+                  </li>
+                  <li>
+                  <a href="reabilitat.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\18.png" alt="Реабилитация" />
+                      Реабилитация
+                    </a>
+                  </li>
+                   <li>
+                  <a href="hirurgiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\16.png" alt="Хирургия" />
+                      Хирургия
+                    </a>
+                  </li>
+                  <li>
+                  <a href="ginek.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\19.png" alt="Гинекология" />
+                      Гинекология
+                    </a>
+                  </li>
+                  <li>
+                  <a href="psicho.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\20.png" alt="Психотерапия" />
+                      Психотерапия
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <li class="link"><a href="#pages">Қызметкерлер</a></li>
+         <li class="link"><a href="checkup.html">Тексеру</a></li>
+           <li class="link"><a href="#reviews">Пікірлер</a></li>
+        </ul>
+        <a href="https://wa.me/77055822457" target="_blank">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: #fb923c; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Байланысу
+    </button>
+          <script src="script.js" defer></script>
+         <button class="menu-toggle">☰</button>
+      </nav>
+     <a href="#" id="home-link">
+      <div class="section__container header__container" id="home">
+        <div class="header__content">
+          <h1>Пациенттерге ерекше қызмет көрсету</h1>
+          <p>
+             Сізді қарсы аламыз! Біз пациенттердің күтімін жоғары деңгейде қамтамасыз етеміз.
+            Заманауи технологиялар, жанашырлық және науқасқа бағытталған тәсілмен сіздің денсаулығыңызды 
+            жақсарту жолында жұмыс істейміз. Бізге сеніңіз және айырмашылықты сезініңіз.
+          </p>
+          <button class="btn">Қызметтерді көру</button>
+        </div>
+       <div class="header__form">
+          <form>
+            <h4>Тіркелу</h4>
+            <input type="text" placeholder="Есіміңіз" />
+            <input type="text" placeholder="Тегіңіз" />
+            <input type="text" placeholder="Мекенжайыңыз" />
+            <input type="text" placeholder="Телефон нөміріңіз" />
+            <button class="btn form__btn">Тіркелу</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    </a>
+     <script src="script.js"></script>
+<script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Бетті қайта жүктеуді болдырмау
+        alert("Сәтті тіркелдіңіз!");
+
+        // Формадағы барлық өрістерді тазалау
+        event.target.reset();
+    });
+</script>
+    <section class="section__container service__container" id="service">
+      <div class="service__header">
+        <div class="service__header__content">
+          <h2 class="section__header">Біздің арнайы қызметтер</h2>
+          <p>
+            Біз сіздің қажеттіліктеріңізге сәйкес жоғары сапалы медициналық көмек көрсетуге тырысамыз.
+          </p>
+        </div>
+        <a href="1.html" class="btn view-services-button">Қаралуға жазылу</a>
+      </div>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-microscope-line"></i></span>
+          <h4>Зертханалық тексерулер</h4>
+          <p>
+               Нақты диагностика, жылдам нәтижелер: біздің зертханада жоғары сапалы тексерулерден өтіңіз.
+          </p>
+          <a href="services.html">Толығырақ</a>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-mental-health-line"></i></span>
+          <h4>Денсаулықты тексеру</h4>
+          <p>
+            Біздің кешенді бағалауымыз сіздің денсаулығыңызды белсенді бақылауда ұстауға көмектеседі.
+          </p>
+          <a href="services.html">Толығырақ</a>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-hospital-line"></i></span>
+          <h4>Жалпы стоматология</h4>
+          <p>
+            Денсаулығыңыз бен күлімдеуіңізді сақтауға арналған кәсіби стоматологиялық күтім.
+          </p>
+          <a href="services.html">Толығырақ</a>
+        </div>
+      </div>
+    </section>
+    <section class="section__container about__container" id="about">
+      <div class="about__content">
+        <h2 class="section__header">Біз туралы</h2>
+        <p>
+         Біздің OtbasyClinic денсаулық орталығына қош келдіңіз, сіздің бір нүктеге баратын орын сенімді және толық денсаулық туралы ақпараттандыруға тырысамыз. Біз денсаулықты нығайтуға және ауруыңыздың алдын алуға сізге күш-қуат беру үшін құнды ресурстармен қамтамасыз етуге міндеттенеміз.
+        </p>
+        <p>
+         Біздің мақалаларымыз бен нұсқаулықтарымыз және медициналық қызметтеріміз медициналық жағдайлардан бастап салауатты өмір салтын ұстануға дейін қамтиды.
+        </p>
+        <p>
+         Денсаулығыңызды жақсарту үшін пайдалы кеңестер алыңыз. Біз сіздің өмір сапаңызды жақсартуға көмектесеміз.
+        </p>
+      </div>
+      <div class="about__image">
+        <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\1.jpeg" alt="about" />
+      </div>
+    </section>
+
+    <section class="section__container why__container" id="blog">
+      <div class="why__image">
+        <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\2.jpeg" alt="why choose us" />
+      </div>
+      <div class="why__content">
+        <h2 class="section__header">Неге бізді таңдайсыз?</h2>
+        <p>
+         Сіздің әл-ауқатыңызға деген адалдығыңызбен біздің жоғары білікті денсаулық сақтау мамандарының командасы пациенттердің ерекше тәжірибесінен басқа ешнәрсе алмауыңызды қамтамасыз етеді.
+        </p>
+        <div class="why__grid">
+          <span><i class="ri-hand-heart-line"></i></span>
+          <div>
+            <h4>Реанимациялық көмек</h4>
+            <p>
+              Біздің жансақтау бөлімшесі озық технологиялармен жабдықталған және кәсіби мамандар командасымен қамтамасыз етілген.
+            </p>
+          </div>
+          <span><i class="ri-truck-line"></i></span>
+          <div>
+            <h4>Тегін жедел жәрдем көлігі</h4>
+            <p>
+              Ешқандай қаржылық ауыртпалықсыз денсаулығыңыз бен әл-ауқатыңызға басымдық беру үшін жанашыр бастама.
+            </p>
+          </div>
+          <span><i class="ri-hospital-line"></i></span>
+          <div>
+            <h4> Медициналық және хирургиялық</h4>
+            <p>
+              Біздің медициналық және хирургиялық қызметтеріміз медициналық қажеттіліктерді қанағаттандыру үшін денсаулық сақтаудың озық шешімдерін ұсынады.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container doctors__container" id="pages">
+      <div class="doctors__header">
+        <div class="doctors__header__content">
+          <h2 class="section__header"> Біздің арнайы дәрігерлеріміз</h2>
+          <p>
+            Біз өзіміздің ерекше дәрігерлер тобымызды мақтан тұтамыз, олардың әрқайсысы өз саласының маманы.
+          </p>
+        </div>
+        <div class="doctors__nav">
+          <span><i class="ri-arrow-left-line"></i></span>
+          <span><i class="ri-arrow-right-line"></i></span>
+        </div>
+      </div>
+      <div class="doctors__grid">
+        <div class="doctors__card">
+          <div class="doctors__card__image">
+            <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\3.jpeg" alt="doctor" />
+            <div class="doctors__socials">
+              <span><i class="ri-instagram-line"></i></span>
+              <span><i class="ri-facebook-fill"></i></span>
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-twitter-fill"></i></span>
+            </div>
+          </div>
+          <h4>Dr. Асылым Бекежановна</h4>
+          <p>Терапевт</p>
+        </div>
+        <div class="doctors__card">
+          <div class="doctors__card__image">
+            <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\4.jpeg" alt="doctor" />
+            <div class="doctors__socials">
+              <span><i class="ri-instagram-line"></i></span>
+              <span><i class="ri-facebook-fill"></i></span>
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-twitter-fill"></i></span>
+            </div>
+          </div>
+          <h4>Dr. Амир Сунгатович</h4>
+          <p>Стоматолог</p>
+        </div>
+        <div class="doctors__card">
+          <div class="doctors__card__image">
+            <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\6.jpeg" alt="doctor" />
+            <div class="doctors__socials">
+              <span><i class="ri-instagram-line"></i></span>
+              <span><i class="ri-facebook-fill"></i></span>
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-twitter-fill"></i></span>
+            </div>
+          </div>
+          <h4>Dr. Дамир Алтайырович</h4>
+          <p>Хирург</p>
+        </div>
+      </div>
+    </section>
+     <section id="reviews">
+    <h2>Клиенттердің пікірлері</h2>
+
+    <!-- Пікірлер тізімі -->
+    <div class="review-list">
+        <div class="review-item">
+            <p>"Қызмет көрсету деңгейі өте жоғары. Жылдам әрі сапалы көмек көрсетті!"</p>
+            <div class="review-rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <small>– Айгерім</small>
+        </div>
+        <div class="review-item">
+            <p>"Дәрігерлер өте мейірімді және кәсіби мамандар. Балама өте ұнады."</p>
+            <div class="review-rating">
+                ⭐⭐⭐⭐☆
+            </div>
+            <small>– Бауыржан</small>
+        </div>
+        <div class="review-item">
+            <p>"Өз мәселелерімді тез шешіп, қажетті ем алдым. Рахмет!"</p>
+            <div class="review-rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <small>– Әсел</small>
+        </div>
+    </div>
+
+    <h3>Өз пікіріңізді қалдырыңыз</h3>
+    <form id="review-form">
+       <label for="rating">Пікіріңіз:</label>
+        <textarea id="feedbackText" placeholder="Пікіріңіз:" required></textarea><br>
+        <label for="rating">Баға беріңіз:</label>
+        <select id="rating">
+            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+            <option value="⭐⭐⭐">⭐⭐⭐</option>
+            <option value="⭐⭐">⭐⭐</option>
+            <option value="⭐">⭐</option>
+        </select><br>
+         <label for="rating">Есіміңіз:</label>
+        <input type="text" id="name" placeholder="Есіміңіз:" required><br>
+        <button type="button" onclick="addFeedback()">Жіберу</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</section>
+ <section>
+ <div class="container">
+        <h1>Медициналық орталықтың байланыстары</h1>
+        <div class="content">
+            <div class="address">
+                <h2>Ақтөбе қаласындағы мекенжайлар</h2>
+                <p><strong>Рентгенология, емхана және зертхана:</strong><br>Достық даңғылы, 63</p>
+                <p><strong>Рентгенология, емхана және зертхана:</strong><br>Қазыбек би, 12В</p>
+                <p><strong>ПЭТ/КТ орталығы:</strong><br>Шагабутдинов, 148</p>
+                <p><strong>Томотерапия:</strong><br>Абай, 91</p>
+                <p><strong>RY Clinic:</strong><br>Қабанбай батыр, 239</p>
+            </div>
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af147e1e14224b9f8ed22767e1c3ed9171e5cc6f05eb740cba3131f49a170e986&source=constructor"></iframe>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Ay<span>Clinic</span></h3>
+          <p>
+            Біз сіздің денсаулық сақтау сапарыңыздың бір бөлігі болғанымызды мақтан тұтамыз және әр қадам сайын жанашырлықпен, жекелендірілген және жоғары деңгейдегі күтімді көрсетуге міндеттенеміз.
+          </p>
+          <p>
+            Денсаулығыңызбен бізге сеніңіз және сіз және сіздің жақындарыңыз үшін ең жақсы нәтижелерге қол жеткізу үшін бірге жұмыс істейік.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Біз туралы</h4>
+          <p>Басты бет</p>
+          <p>Біз туралы</p>
+          <p>Бізбен жұмыс</p>
+          <p>Біздің блог</p>
+          <p>Ережелер & Шарттар</p>
+        </div>
+        <div class="footer__col">
+          <h4>Қызметтер</h4>
+          <p>Іздеу шарттары</p>
+          <p>Аванстық іздеу</p>
+          <p>Құпиялылық саясаты</p>
+          <p>Жеткізушілер</p>
+          <p>Біздің дүкендер</p>
+        </div>
+        <div class="footer__col">
+          <h4>Байланыс</h4>
+          <p>
+            <i class="ri-map-pin-2-fill"></i>"Тәуелсіздік" даңғылы,18а
+          </p>
+          <p><i class="ri-mail-fill"></i> AyClinic18@gmail.com</p>
+          <p><i class="ri-phone-fill"></i> 8 (705) 582 24 57</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <p>&copy; 2024 Денсаулық орталығы. Барлық құқықтар қорғалған.</p>
+          <div class="footer__socials">
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AyClinic - Денсаулық орталығы. Денсаулық сақтау саласындағы ең үздік қызметтер мен заманауи технологияларды ұсынады.">
+<meta name="author" content="AyClinic">
+<meta name="keywords" content="Денсаулық, клиника, медициналық қызметтер, диагностика, стоматология">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>OtbasyClinic | Отбасылық денсаулық орталығы</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #00796b;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .service-item {
+      width: 30%;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin: 10px;
+      background-color: #fff;
+    }
+    .service-item img {
+      width: 100px;
+    }
+       .doctor-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.doctor-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.doctor-image {
+    width: 100%;
+    height: 150px; /* Биіктігі 150px деп берілді, қажет болса өзгертуге болады */
+    object-fit: cover; /* Суреттің қисықтығын және созылуын болдырмау */
+    border-radius: 8px;
+}
+
+.info-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #fb923c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.info-button:hover {
+    background-color:#12ac8e;
+}
+
+.doctor-info {
+    display: none;
+    margin-top: 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.doctor-info p {
+    margin: 5px 0;
+}
+  </style>
+  </head>
+  <body>
+    <header>
+      <nav class="section__container nav__container">
+        <div class="nav__logo">Otbasy<span>Clinic</span></div>
+        <ul class="nav__links">
+          <li class="link"><a href="#home">Басты бет</a></li>
+          <li class="link"><a href="#about">Біз туралы</a></li>
+          <nav>
+            <ul class="menu">
+              <li class="dropdown">
+                <a href="#">Қызметтер</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="terapiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\11.png" alt="Терапия" />
+                      Терапия
+                    </a>
+                  </li>
+                  <li>
+                    <a href="pediatriya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\12.png" alt="Педиатрия" />
+                      Педиатрия
+                    </a>
+                  </li>
+                  <li>
+                    <a href="nevrologiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\14.png" alt="Неврология" />
+                      Нефрология
+                    </a>
+                  </li>
+                  <li>
+                    <a href="lor.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\15.png" alt="ЛОР" />
+                      ЛОР
+                    </a>
+                  </li>
+                  <li>
+                  <a href="nefrologiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\17.png" alt="Нефрология" />
+                      Неврология
+                    </a>
+                  </li>
+                  <li>
+                  <a href="endokrinologiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\13.png" alt="Эндокринология" />
+                      Эндокринология
+                    </a>
+                  </li>
+                  <li>
+                  <a href="reabilitat.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\18.png" alt="Реабилитация" />
+                      Реабилитация
+                    </a>
+                  </li>
+                   <li>
+                  <a href="hirurgiya.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\16.png" alt="Хирургия" />
+                      Хирургия
+                    </a>
+                  </li>
+                  <li>
+                  <a href="ginek.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\19.png" alt="Гинекология" />
+                      Гинекология
+                    </a>
+                  </li>
+                  <li>
+                  <a href="psicho.html">
+                      <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\20.png" alt="Психотерапия" />
+                      Психотерапия
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <li class="link"><a href="#pages">Қызметкерлер</a></li>
+         <li class="link"><a href="checkup.html">Тексеру</a></li>
+           <li class="link"><a href="#reviews">Пікірлер</a></li>
+        </ul>
+        <button class="btn">Байланысу</button>
+        </button>
+          <script src="script.js" defer></script>
+         <button class="menu-toggle">☰</button>
+      </nav>
+       <section id="endocrinology" style="background-color: #f9f9f9;">
+    <div class="container">
+      <h2>Педиатрия бөлімі</h2>
+      <p style="text-align: center; font-size: 18px; margin-bottom: 30px;">
+      Дәрігер қабылдауында баласы мен ата-анасы жақсы сезінсін деп біз, OtbasyClinic, педиатрия бөлімінде жайлы әрі қауіпсіз ортаны құрдық. Балалардың көңілін табу үшін әр ұсақ-түйекке назар аударып, емдеу процесінде ойыншықтар мен басқа сәндік элементтерді қолданамыз. 
+      Тәжірибелі педиатрларымыз әр баламен жақсы қарым-қатынас орнатуға тырысады. Олар денсаулықты кешенді бағалаудан өткізіп, өсудің негізгі параметрілерін өлшеп, баланың жалпы жағдайын бағалайды. Біздің әдісіміз баланың қабылдау уақытында өзін қауіпсіз әрі қамқорлықта сезінуі үшін бағытталған. 
+      </p>
+      </section>
+      <p>
+        <section>
+      <div class="services">
+        <div class="service-item">
+          <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\21.jfif" alt="Қалқанша безі">
+          <h3>Біз-</h3>
+          <p> балаларға бейімделген жұмсақ және инвазивті емес диагностикалық әдістерді қолданамыз. </p>
+        </div>
+        <div class="service-item">
+          <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\23.jpg" alt="Қант диабеті">
+          <h3>Кәсіби мамандармен балаңыздың денсаулығына қамқорлық жасауды бастаңыз. </h3>
+          <p> Бүгіннен қалмай біздің педиатрлардың қабылдауына жазылыңыз және балаңызға ең жақсы күтімді көрсетіңіз.</p>
+        </div>
+      </div>
+      </p>
+    </div>
+  </section>
+  <section>
+<div class="doctor-container">
+    <div class="doctor-card">
+        <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\29.jpeg" alt="Дәрігердің суреті" class="doctor-image">
+        <button class="info-button" onclick="toggleInfo(1)">Толығырақ</button>
+        <div id="doctor-info-1" class="doctor-info">
+            <p><strong>Аты-жөні:</strong>Ахметғалиева Гүзалия Мәжітқызы</p>
+            <p><strong>Қызметі:</strong> Педиатрия</p>
+            <p><strong>Туған жері:</strong> Тараз
+            <p><strong>Жұмыс күні мен уақыты:</strong> Дүйсенбі - Жұма, 09:00 - 18:00</p>
+        </div>
+    </div>
+
+    <div class="doctor-card">
+        <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\30.jpeg" alt="Дәрігердің суреті" class="doctor-image">
+        <button class="info-button" onclick="toggleInfo(2)">Толығырақ</button>
+        <div id="doctor-info-2" class="doctor-info">
+            <p><strong>Аты-жөні:</strong> Алтынбекова Майра Зиятбековна</p>
+            <p><strong>Қызметі:</strong> Педиатр</p>
+            <p><strong>Туған жері:</strong> Тараз </p>
+            <p><strong>Жұмыс күні мен уақыты:</strong> Сейсенбі - Бейсенбі, 10:00 - 17:00</p>
+        </div>
+    </div>
+
+    <div class="doctor-card">
+        <img src="C:\Users\aydan\Desktop\курс жұмыс\icon\31.jpeg" alt="Дәрігердің суреті" class="doctor-image">
+        <button class="info-button" onclick="toggleInfo(3)">Толығырақ</button>
+        <div id="doctor-info-3" class="doctor-info">
+            <p><strong>Аты-жөні:</strong> Вагнер Ольга Викторовна</p>
+            <p><strong>Қызметі:</strong>Педиатр</p>
+            <p><strong>Туған жері:</strong> Қарағанды</p>
+            <p><strong>Жұмыс күні мен уақыты:</strong> Сенбі - Жексенбі, 08:00 - 16:00</p>
+        </div>
+    </div>
+</div>
+       </section>
+ <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Ay<span>Clinic</span></h3>
+          <p>
+            Біз сіздің денсаулық сақтау сапарыңыздың бір бөлігі болғанымызды мақтан тұтамыз және әр қадам сайын жанашырлықпен, жекелендірілген және жоғары деңгейдегі күтімді көрсетуге міндеттенеміз.
+          </p>
+          <p>
+            Денсаулығыңызбен бізге сеніңіз және сіз және сіздің жақындарыңыз үшін ең жақсы нәтижелерге қол жеткізу үшін бірге жұмыс істейік.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Біз туралы</h4>
+          <p>Басты бет</p>
+          <p>Біз туралы</p>
+          <p>Бізбен жұмыс</p>
+          <p>Біздің блог</p>
+          <p>Ережелер & Шарттар</p>
+        </div>
+        <div class="footer__col">
+          <h4>Қызметтер</h4>
+          <p>Іздеу шарттары</p>
+          <p>Аванстық іздеу</p>
+          <p>Құпиялылық саясаты</p>
+          <p>Жеткізушілер</p>
+          <p>Біздің дүкендер</p>
+        </div>
+        <div class="footer__col">
+          <h4>Байланыс</h4>
+          <p>
+            <i class="ri-map-pin-2-fill"></i>"Тәуелсіздік" даңғылы,18а
+          </p>
+          <p><i class="ri-mail-fill"></i> AyClinic18@gmail.com</p>
+          <p><i class="ri-phone-fill"></i> 8 (705) 582 24 57</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <p>&copy; 2024 Денсаулық орталығы. Барлық құқықтар қорғалған.</p>
+          <div class="footer__socials">
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+     <script>
+    // Жасырылған ақпаратты көрсету/жасыру үшін функция
+    function toggleInfo(doctorId) {
+        var infoDiv = document.getElementById('doctor-info-' + doctorId);
+        
+        if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
+            infoDiv.style.display = 'block'; // Ақпаратты көрсету
+        } else {
+            infoDiv.style.display = 'none'; // Ақпаратты жасыру
+        }
+    }
+</script>
+</body>
+</html>
